@@ -1,0 +1,31 @@
+#tabs-course{
+	display: none;
+}
+
+.tabs-course-panel .ui-tabs-nav {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.tabs-course-panel .ui-tabs-nav .ui-state-default {
+	list-style: none;
+	display: inline-block;
+	padding-right: 10px;
+	margin-left: 10px;
+}
+
+.tabs-course-panel .ui-tabs-nav .ui-state-default {
+	opacity: 0.6;
+}
+
+.tabs-course-panel .ui-tabs-nav .ui-state-default:first-child {
+	margin-left: 0;
+}
+
+.tabs-course-panel .ui-tabs-nav .ui-state-default:nth-child(odd) {
+	border-right: 1px solid;
+}
+
+.tabs-course-panel .ui-tabs-nav .ui-state-active {
+	opacity: 1;
+}
