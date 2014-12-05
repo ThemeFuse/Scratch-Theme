@@ -1,3 +1,2 @@
-This is an example of a shortcode integrated with the page builder.
+This is an example of a disabled shortcode. The disabling is done via the `fw_ext_shortcodes_disable_shortcodes` filter (see [here](https://github.com/ThemeFuse/Scratch-Theme/blob/master/scratch-parent/framework-customizations/extensions/shortcodes/hooks.php)).
 
-The shortcode is as simple as it can be, it only has a config and a view file, no options, static and class file.
