@@ -1,0 +1,1 @@
+This is a demo of how to enalbe options for the Page Builder columns.
