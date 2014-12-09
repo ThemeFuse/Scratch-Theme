@@ -19,6 +19,15 @@
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
+	<?php if( defined('FW') ) : ?>
+		<div id="flash-messages"><?php FW_Flash_Messages::_print_frontend(); ?></div>
+		<script type="text/javascript">
+			jQuery(function ($) {
+				$('#flash-messages').prependTo( $('#content') );
+			});
+		</script>
+	<?php endif ?>
+
 	<?php wp_footer(); ?>
 </body>
 </html>
