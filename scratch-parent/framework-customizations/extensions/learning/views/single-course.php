@@ -69,6 +69,11 @@ get_header(); ?>
 								<?php endif ?>
 							</div>
 						</div>
+						<?php
+						if ( function_exists( 'fw_ext_learning_student_get_take_course_method' ) ) {
+							echo fw_ext_learning_student_get_take_course_method();
+						}
+						?>
 					</div>
 					<!-- .entry-content -->
 				</article><!-- #post-## -->
