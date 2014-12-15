@@ -2,7 +2,7 @@
 	die( 'Direct access forbidden.' );
 }
 
-if ( defined( 'FW' ) && ! function_exists( 'fw_ext_social_twitter_get_connection' ) && function_exists( 'curl_version' ) ) {
+if ( defined( 'FW' ) && function_exists( 'fw_ext_social_twitter_get_connection' ) && function_exists( 'curl_version' ) ) {
 
 	class Widget_Twitter extends WP_Widget {
 
