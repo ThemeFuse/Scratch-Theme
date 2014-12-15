@@ -19,6 +19,8 @@
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
+	<?php wp_footer(); ?>
+
 	<?php if( defined('FW') ) : ?>
 		<div id="flash-messages"><?php FW_Flash_Messages::_print_frontend(); ?></div>
 		<script type="text/javascript">
@@ -27,7 +29,5 @@
 			});
 		</script>
 	<?php endif ?>
-
-	<?php wp_footer(); ?>
 </body>
 </html>
