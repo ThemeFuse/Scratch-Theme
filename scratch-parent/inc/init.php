@@ -174,7 +174,11 @@ class Theme_Includes
 
 				self::include_isolated($dir .'/class-widget-'. $dirname .'.php');
 
-				register_widget('Widget_'. self::dirname_to_classname($dirname));
+				$widget_class = 'Widget_' . self::dirname_to_classname( $dirname );
+				if ( class_exists( $widget_class ) ) {
+					register_widget( $widget_class );
+				}
+
 			}
 		}
 	}
