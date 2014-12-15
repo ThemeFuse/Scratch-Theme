@@ -359,10 +359,9 @@ if ( ! function_exists( '_action_theme_display_form_errors' ) && defined( 'FW' )
 		);
 
 		wp_localize_script( 'fw-theme-show-form-errors', '_localized_form_errors', array(
-			'errors'    => $form->get_errors(),
-			'form_attr' => $form->attr()
+			'errors'  => $form->get_errors(),
+			'form_id' => $form->get_id()
 		) );
 	}
-
-	add_action( 'wp_enqueue_scripts', '_action_theme_display_form_errors' );
 endif;
+add_action( 'wp_enqueue_scripts', '_action_theme_display_form_errors' );

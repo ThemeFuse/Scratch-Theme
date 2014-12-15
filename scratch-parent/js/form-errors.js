@@ -3,7 +3,7 @@
  */
 (function(localized){
 	jQuery(function($){
-		var $form = $('form#'+ localized.form_attr.id);
+		var $form = $('form.fw_form_'+ localized.form_id);
 
 		if (!$form.length) {
 			return;
