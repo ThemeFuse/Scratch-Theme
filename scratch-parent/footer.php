@@ -20,14 +20,5 @@
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
-
-	<?php if( defined('FW') ) : ?>
-		<div id="flash-messages"><?php FW_Flash_Messages::_print_frontend(); ?></div>
-		<script type="text/javascript">
-			jQuery(function ($) {
-				$('#flash-messages').prependTo( $('#content') );
-			});
-		</script>
-	<?php endif ?>
 </body>
 </html>
