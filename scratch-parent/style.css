@@ -6725,3 +6725,11 @@ a.pp_arrow_next {
 @media (max-width: 479px) {
 
 }
+
+/*
+ * fix for https://github.com/ThemeFuse/Unyson/issues/97
+ */
+.fw-page-builder-content {
+	margin-left: -15px;
+	margin-right: -15px;
+}
