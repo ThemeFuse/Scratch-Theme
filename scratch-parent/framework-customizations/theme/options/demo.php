@@ -465,6 +465,19 @@ $options = array(
 				'unyson' )
 		),
 	),
+	'demo_rgba_color_picker' => array(
+		'label' => __( 'RGBA Color Picker', 'unyson' ),
+		'type'  => 'rgba-color-picker',
+		'value' => '',
+		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			'unyson' ),
+		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
+			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				'unyson' ),
+			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
+				'unyson' )
+		),
+	),
 	'demo_background_image'          => array(
 		'label'   => __( 'Background Image', 'unyson' ),
 		'type'    => 'background-image',
