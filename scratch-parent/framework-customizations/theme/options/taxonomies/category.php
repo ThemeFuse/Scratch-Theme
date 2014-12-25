@@ -447,6 +447,19 @@ $options = array(
 				'unyson' )
 		),
 	),
+	'demo_rgba_color_picker' => array(
+		'label' => __( 'RGBA Color Picker', 'unyson' ),
+		'type'  => 'rgba-color-picker',
+		'value' => 'rgba(255, 0, 0, .5)',
+		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			'unyson' ),
+		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
+			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				'unyson' ),
+			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
+				'unyson' )
+		),
+	),
 	'demo_gradient'                => array(
 		'label' => __( 'Gradient', 'unyson' ),
 		'type'  => 'gradient',
@@ -609,6 +622,29 @@ $options = array(
 			'datepicker'    => true,
 			'defaultTime'   => '12:00'
 		)
+	),
+	'demo_slider' => array(
+		'label' => __( 'Slider', 'unyson' ),
+		'type'  => 'slider',
+		'value' => 10,
+		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
+		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
+			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
+			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', 'unyson' )
+		),
+	),
+	'demo_range_slider' => array(
+		'label' => __( 'Range Slider', 'unyson' ),
+		'type'  => 'range-slider',
+		'value' => array(
+			'from' => 30,
+			'to' => 50
+		),
+		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
+		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
+			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
+			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', 'unyson' )
+		),
 	),
 	'demo_addable_popup'           => array(
 		'label'         => __( 'Addable Popup', 'unyson' ),
