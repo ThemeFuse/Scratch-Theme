@@ -338,30 +338,32 @@ function _action_theme_widgets_init() {
 
 add_action( 'widgets_init', '_action_theme_widgets_init' );
 
-/**
- * Display current submitted FW_Form errors
- * @return array
- */
-if ( ! function_exists( '_action_theme_display_form_errors' ) && defined( 'FW' ) ):
-	function _action_theme_display_form_errors() {
-		$form = FW_Form::get_submitted();
+if ( defined( 'FW' ) ):
+	/**
+	 * Display current submitted FW_Form errors
+	 * @return array
+	 */
+	if ( ! function_exists( '_action_theme_display_form_errors' ) ):
+		function _action_theme_display_form_errors() {
+			$form = FW_Form::get_submitted();
 
-		if ( ! $form || $form->is_valid() ) {
-			return;
+			if ( ! $form || $form->is_valid() ) {
+				return;
+			}
+
+			wp_enqueue_script(
+				'fw-theme-show-form-errors',
+				get_template_directory_uri() . '/js/form-errors.js',
+				array( 'jquery' ),
+				'1.0',
+				true
+			);
+
+			wp_localize_script( 'fw-theme-show-form-errors', '_localized_form_errors', array(
+				'errors'  => $form->get_errors(),
+				'form_id' => $form->get_id()
+			) );
 		}
-
-		wp_enqueue_script(
-			'fw-theme-show-form-errors',
-			get_template_directory_uri() . '/js/form-errors.js',
-			array( 'jquery' ),
-			'1.0',
-			true
-		);
-
-		wp_localize_script( 'fw-theme-show-form-errors', '_localized_form_errors', array(
-			'errors'  => $form->get_errors(),
-			'form_id' => $form->get_id()
-		) );
-	}
+	endif;
+	add_action('wp_enqueue_scripts', '_action_theme_display_form_errors');
 endif;
-add_action( 'wp_enqueue_scripts', '_action_theme_display_form_errors' );
