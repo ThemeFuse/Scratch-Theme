@@ -1,7 +1,7 @@
 <?php if ( ! defined( 'ABSPATH' ) ) {
 	die( 'Direct access forbidden.' );
 }
-if ( defined( 'FW' ) && ! empty( fw()->extensions->get( 'social-facebook' ) ) ) {
+if ( defined( 'FW' ) && function_exists('fw_ext_social_facebook_graph_api_explorer') ) {
 
 	class Widget_Facebook_Page_Stream extends WP_Widget {
 
@@ -34,9 +34,7 @@ if ( defined( 'FW' ) && ! empty( fw()->extensions->get( 'social-facebook' ) ) ) 
 //			'1.0'
 //		);
 
-			/* @var $facebook FW_Extension_Social_Facebook */
-			$facebook = fw()->extensions->get( 'social-facebook' );
-			$result   = $facebook->graph_api_explorer( 'GET', $page_id, array( 'fields' => 'posts.limit(' . $number . '){message}' ) );
+			$result   = fw_ext_social_facebook_graph_api_explorer( 'GET', $page_id, array( 'fields' => 'posts.limit(' . $number . '){message}' ) );
 			$result   = json_decode( $result );
 			if ( ! empty( $result->posts->data ) ) {
 				$posts     = $result->posts->data;
