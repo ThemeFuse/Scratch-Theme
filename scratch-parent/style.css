@@ -2045,6 +2045,10 @@ span + .edit-link:before {
 	padding: 9px 0;
 }
 
+.secondary-navigation a.fa:before {
+	margin-right: 10px;
+}
+
 .menu-toggle {
 	background-color: #000;
 	border-radius: 0;
