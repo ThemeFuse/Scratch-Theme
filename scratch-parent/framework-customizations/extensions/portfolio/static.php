@@ -2,11 +2,7 @@
 	die( 'Forbidden' );
 }
 
-/**
- * @var array $other_existing_paths
- */
-
-include $other_existing_paths['framework'];
+fw_include_file_isolated( fw_ext( 'portfolio' )->get_path( '/static.php' ) );
 
 if ( ! is_admin() ) {
 
