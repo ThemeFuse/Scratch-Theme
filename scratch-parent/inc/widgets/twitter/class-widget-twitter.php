@@ -35,9 +35,14 @@ if ( defined( 'FW' ) && function_exists( 'fw_ext_social_twitter_get_connection' 
 //			'1.0'
 //		);
 
-			/* @var $connection TwitterOAuth */
-			$connection = fw_ext_social_twitter_get_connection();
-			$tweets     = $connection->get( "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" . $user . "&count=" . $number );
+			$tweets = get_site_transient( 'scratch_tweets_' . $user . '_' . $number );
+
+			if ( empty( $tweets ) ) {
+				/* @var $connection TwitterOAuth */
+				$connection = fw_ext_social_twitter_get_connection();
+				$tweets     = $connection->get( "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" . $user . "&count=" . $number );
+				set_site_transient( 'scratch_tweets_' . $user . '_' . $number, $tweets, 12 * HOUR_IN_SECONDS );
+			}
 
 			$view_path = dirname( __FILE__ ) . '/views/widget.php';
 			echo fw_render_view( $view_path, compact( 'before_widget', 'title', 'tweets', 'number', 'after_widget' ) );

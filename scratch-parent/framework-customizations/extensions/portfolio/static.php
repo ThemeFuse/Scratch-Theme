@@ -2,12 +2,13 @@
 	die( 'Forbidden' );
 }
 
-fw_include_file_isolated( fw_ext( 'portfolio' )->get_path( '/static.php' ) );
+$ext_instance = fw()->extensions->get( 'portfolio' );
+
+fw_include_file_isolated( $ext_instance->get_path( '/static.php' ) );
 
 if ( ! is_admin() ) {
 
-	$ext_instance = fw()->extensions->get( 'portfolio' );
-	$settings     = $ext_instance->get_settings();
+	$settings = $ext_instance->get_settings();
 
 	if ( is_tax( $settings['taxonomy_name'] ) || is_post_type_archive( $settings['post_type'] ) ) {
 		wp_enqueue_script(
