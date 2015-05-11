@@ -71,6 +71,7 @@ $options = array(
 			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
 				'unyson' )
 		),
+		'reinit' => true,
 	),
 	'demo_html'                      => array(
 		'label' => __( 'HTML', 'unyson' ),
