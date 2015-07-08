@@ -12,7 +12,7 @@ if ( defined( 'FW' ) ) {
 			 */
 			function __construct() {
 				$widget_ops = array( 'description' => 'Page Steam' );
-				parent::WP_Widget( false, __( 'Facebook', 'unyson' ), $widget_ops );
+				parent::__construct( false, __( 'Facebook', 'unyson' ), $widget_ops );
 			}
 
 			/**

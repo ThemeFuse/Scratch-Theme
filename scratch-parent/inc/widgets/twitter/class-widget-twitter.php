@@ -11,7 +11,7 @@ if ( defined( 'FW' ) && function_exists( 'fw_ext_social_twitter_get_connection' 
 		 */
 		function __construct() {
 			$widget_ops = array( 'description' => 'Twitter Feed' );
-			parent::WP_Widget( false, __( 'Twitter', 'unyson' ), $widget_ops );
+			parent::__construct( false, __( 'Twitter', 'unyson' ), $widget_ops );
 		}
 
 		/**
