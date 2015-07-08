@@ -7,7 +7,7 @@ class Widget_Blog_Tabs extends WP_Widget {
 	 */
 	public function __construct() {
 		$widget_ops = array( 'description' => '' );
-		parent::WP_Widget( false, __( 'Blog Tabs', 'unyson' ), $widget_ops );
+		parent::__construct( false, __( 'Blog Tabs', 'unyson' ), $widget_ops );
 	}
 
 	/**

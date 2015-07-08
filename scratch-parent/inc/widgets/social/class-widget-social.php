@@ -5,7 +5,7 @@ class Widget_Social extends WP_Widget {
 	function __construct() {
 		$widget_ops = array( 'description' => __( 'Social links', 'unyson' ) );
 
-		parent::WP_Widget( false, __( 'Social', 'unyson' ), $widget_ops );
+		parent::__construct( false, __( 'Social', 'unyson' ), $widget_ops );
 	}
 
 	function widget( $args, $instance ) {

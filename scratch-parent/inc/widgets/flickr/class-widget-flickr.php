@@ -7,7 +7,7 @@ class Widget_Flickr extends WP_Widget {
 	 */
 	function __construct() {
 		$widget_ops = array( 'description' => '' );
-		parent::WP_Widget( false, __( 'Flickr', 'unyson' ), $widget_ops );
+		parent::__construct( false, __( 'Flickr', 'unyson' ), $widget_ops );
 	}
 
 	/**
