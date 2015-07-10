@@ -587,6 +587,38 @@ $options = array(
 				'unyson' )
 		),
 	),
+	'demo_typography-v2_2'                => array(
+		'label' => __( 'Typography V2', 'unyson' ),
+		'type'  => 'typography-v2',
+		'value'      => array(
+			'family'    => 'Verdana',
+//			For standard fonts, instead of subset and variation you should set 'style' and 'weight'.
+//			'style' => 'italic',
+//			'weight' => 700,
+			'subset'    => 'latin',
+			'variation' => 700,
+			'size'      => 14,
+			'line-height' => 13,
+			'letter-spacing' => -2,
+			'color'     => '#0000ff'
+		),
+		'components' => array(
+			'family'         => true,
+			//'style', 'weight', 'subset', 'variation' will appear and disappear along with 'family'
+			'size'           => true,
+			'line-height'    => true,
+			'letter-spacing' => true,
+			'color'          => true
+		),
+		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			'unyson' ),
+		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
+			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				'unyson' ),
+			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
+				'unyson' )
+		),
+	),
 	'demo_datetime_range_2'            => array(
 		'type'             => 'datetime-range',
 		'attr'             => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
