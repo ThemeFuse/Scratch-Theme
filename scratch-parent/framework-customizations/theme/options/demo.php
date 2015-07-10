@@ -578,12 +578,12 @@ $options = array(
 		'label' => __( 'Typography V2', 'unyson' ),
 		'type'  => 'typography-v2',
 		'value'      => array(
-			'family'    => 'Verdana',
+			'family'    => 'Amarante',
 //			For standard fonts, instead of subset and variation you should set 'style' and 'weight'.
 //			'style' => 'italic',
 //			'weight' => 700,
-			'subset'    => 'latin',
-			'variation' => 700,
+			'subset'    => 'latin-ext',
+			'variation' => 'regular',
 			'size'      => 14,
 			'line-height' => 13,
 			'letter-spacing' => -2,
