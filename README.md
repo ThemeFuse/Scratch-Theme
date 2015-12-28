@@ -44,6 +44,22 @@ Unyson's documentation is available on http://unyson-docs.themefuse.com/.
 
 Code and documentation copyright 2014 ThemeFuse LTD. Code released under [the GPL license](https://github.com/ThemeFuse/Scratch-Theme/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/ThemeFuse/Unyson-Documentation/blob/master/LICENSE).
 
+### Third-party Libraries
+
+* **[jQuery MixItUp](https://github.com/patrickkunka/mixitup/blob/master/LICENSE.md)**
+* [jQuery customInput](https://github.com/filamentgroup/jQuery-Custom-Input/blob/master/license.txt)
+* [jQuery UI](https://github.com/jquery/jquery-ui/blob/master/LICENSE.txt)
+* [jQuery Easing](https://github.com/gdsmith/jquery.easing/blob/master/LICENSE)
+* [jQuery FitVids](https://github.com/davatron5000/FitVids.js/blob/master/jquery.fitvids.js)
+* [jQuery Nivo Slider](https://github.com/gilbitron/Nivo-Slider/blob/master/license.txt)
+* [Selectize](https://github.com/brianreavis/selectize.js/blob/master/LICENSE)
+* [FlexSlider](https://raw.githubusercontent.com/woothemes/FlexSlider/master/LICENSE.md)
+* [BxSlider](https://github.com/stevenwanderski/bxslider-4/blob/master/LICENSE.md)
+* [Owl Carousel](https://github.com/OwlFonk/OwlCarousel/blob/master/LICENSE)
+* [Font Awesome](http://fontawesome.io/license)
+* [Genericons](https://github.com/Automattic/Genericons/blob/master/LICENSE.txt)
+* [TGM Plugin Activation](http://tgmpluginactivation.com/#license)
+
 ## Contributing
 
 Developers can contribute to the source code. Please read our [contributor guidelines](https://github.com/ThemeFuse/Scratch-Theme/blob/master/CONTRIBUTING.md) for more information how you can do this.
