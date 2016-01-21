@@ -13,7 +13,7 @@
 echo $before_widget;
 echo $title;
 ?>
-	<div class="wrap-flickr">
+	<div class="wrap-twitter">
 		<ul>
 			<?php
 			foreach ( $tweets as $tweet ) {
