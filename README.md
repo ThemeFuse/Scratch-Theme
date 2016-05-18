@@ -2,7 +2,7 @@
 
 Starter Theme for [Unyson](http://unyson.themefuse.com/).
 
-To get started, check out http://unyson.themefuse.com/!
+To get started, check out http://unyson.io/
 
 ## Table of contents
 
@@ -38,7 +38,7 @@ A good bug report includes full details to easily understand the issue you are h
 
 ## Documentation
 
-Unyson's documentation is available on http://unyson-docs.themefuse.com/.
+Unyson's documentation is available on http://manual.unyson.io/.
 
 ## Copyright and license
 
