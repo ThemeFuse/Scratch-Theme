@@ -1,6 +1,6 @@
 # Unyson Scratch Theme
 
-Starter Theme for [Unyson](http://unyson.themefuse.com/).
+Starter Theme for [Unyson](http://unyson.io/).
 
 To get started, check out http://unyson.io/
 
