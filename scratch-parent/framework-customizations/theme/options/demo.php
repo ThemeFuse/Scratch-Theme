@@ -2,45 +2,33 @@
 	die( 'Forbidden' );
 }
 
+$desc = __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' );
+$help = sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
+	__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
+	__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', 'unyson' )
+);
+
 $options = array(
 	'demo_text'                      => array(
 		'label' => __( 'Text', 'unyson' ),
 		'type'  => 'text',
 		'value' => 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'  => $desc,
+		'help'  => $help,
 	),
 	'demo_short_text'                => array(
 		'label' => __( 'Short Text', 'unyson' ),
 		'type'  => 'short-text',
 		'value' => '7',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'  => $desc,
+		'help'  => $help,
 	),
 	'demo_password'                  => array(
 		'label' => __( 'Password', 'unyson' ),
 		'type'  => 'password',
 		'value' => 'Dotted text',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'  => $desc,
+		'help'  => $help,
 	),
 	'demo_hidden'                    => array(
 		'label' => false,
@@ -52,54 +40,35 @@ $options = array(
 		'label' => __( 'Textarea', 'unyson' ),
 		'type'  => 'textarea',
 		'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'  => $desc,
 		'help'  => array(
 			'icon' => 'video',
 			'html' => '<iframe width="420" height="236" src="https://player.vimeo.com/video/101070863" frameborder="0" allowfullscreen></iframe>'
 		),
 	),
 	'demo_wp_editor'                 => array(
-		'label' => __( 'Rich Text Editor', 'unyson' ),
-		'type'  => 'wp-editor',
-		'value' => 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'label'  => __( 'Rich Text Editor', 'unyson' ),
+		'type'   => 'wp-editor',
+		'value'  => 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
+		'desc'   => $desc,
+		'help'   => $help,
 		'reinit' => true,
 	),
 	'demo_html'                      => array(
 		'label' => __( 'HTML', 'unyson' ),
 		'type'  => 'html',
 		'value' => '{some: "json"}',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'  => $desc,
 		'html'  => '<em>Lorem</em> <b>ipsum</b> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADWSURBVDjLlZNNCsIwEEZzKW/jyoVbD+Aip/AGgmvRldCKNxDBv4LSfSG7kBZix37BQGiapA48ZpjMvIZAGRExwDmnESw7MMvsHnMFTdOQUsqjrmtXsggKEEVReCDseZc/HbOgoCxLDytwUEFBVVUe/fjNDguEEFGSAiml4Xq+DdZJAV78sM1oOpnT/fI0oEYPZ0lBtjuaBWSttcHtRQWvx9sMrlcb7+HQwxlmojfI9ycziGyj34sK3AV8zd7KFSYFCCwO1aMFsQgK8DO1bRsFM0HBP9i9L2ONMKHNZV7xAAAAAElFTkSuQmCC">',
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'  => $help,
 	),
 	'demo_checkbox'                  => array(
 		'label' => __( 'Checkbox', 'unyson' ),
 		'type'  => 'checkbox',
 		'value' => true,
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'  => $desc,
 		'text'  => __( 'Custom text', 'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'  => $help,
 	),
 	'demo_checkboxes'                => array(
 		'label'   => __( 'Checkboxes', 'unyson' ),
@@ -108,19 +77,13 @@ $options = array(
 			'c1' => false,
 			'c2' => true,
 		),
-		'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'    => $desc,
 		'choices' => array(
 			'c1' => __( 'Checkbox 1 Custom Text', 'unyson' ),
 			'c2' => __( 'Checkbox 2 Custom Text', 'unyson' ),
 			'c3' => __( 'Checkbox 3 Custom Text', 'unyson' ),
 		),
-		'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'    => $help,
 	),
 	'demo_switch'                    => array(
 		'label'        => __( 'Switch', 'unyson' ),
@@ -134,21 +97,14 @@ $options = array(
 			'label' => __( 'No', 'unyson' )
 		),
 		'value'        => 'yes',
-		'desc'         => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'         => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'         => $desc,
+		'help'         => $help,
 	),
 	'demo_select'                    => array(
 		'label'   => __( 'Select', 'unyson' ),
 		'type'    => 'select',
 		'value'   => 'c',
-		'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'    => $desc,
 		'choices' => array(
 			''  => '---',
 			'a' => __( 'Lorem ipsum', 'unyson' ),
@@ -173,19 +129,13 @@ $options = array(
 			2   => __( 'Two', 'unyson' ),
 			3   => __( 'Three', 'unyson' ),
 		),
-		'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'    => $help,
 	),
 	'demo_short_select'              => array(
 		'label'   => __( 'Short Select', 'unyson' ),
 		'type'    => 'short-select',
 		'value'   => '7',
-		'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'    => $desc,
 		'choices' => array(
 			'1' => '1',
 			'2' => '2',
@@ -195,19 +145,13 @@ $options = array(
 			'6' => '6',
 			'7' => '7',
 		),
-		'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'    => $help,
 	),
 	'demo_select_multiple'           => array(
 		'label'   => __( 'Select Multiple', 'unyson' ),
 		'type'    => 'select-multiple',
 		'value'   => array( 'c', '2' ),
-		'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'    => $desc,
 		'choices' => array(
 			''  => '---',
 			'a' => __( 'Lorem ipsum', 'unyson' ),
@@ -232,12 +176,7 @@ $options = array(
 			2   => __( 'Two', 'unyson' ),
 			3   => __( 'Three', 'unyson' ),
 		),
-		'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'    => $help,
 	),
 	'demo_group_multi_select'        => array(
 		'type'    => 'group',
@@ -247,42 +186,24 @@ $options = array(
 				'label'      => __( 'Multi-Select: Posts', 'unyson' ),
 				'population' => 'posts',
 				'source'     => 'page',
-				'desc'       => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'       => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'       => $desc,
+				'help'       => $help,
 			),
 			'demo_multi_select_taxonomies' => array(
 				'type'       => 'multi-select',
 				'label'      => __( 'Multi-Select: Taxonomies', 'unyson' ),
 				'population' => 'taxonomy',
 				'source'     => 'category',
-				'desc'       => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'       => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'       => $desc,
+				'help'       => $help,
 			),
 			'demo_multi_select_users'      => array(
 				'type'       => 'multi-select',
 				'label'      => __( 'Multi-Select: Users', 'unyson' ),
 				'population' => 'users',
 				'source'     => 'administrator',
-				'desc'       => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'       => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'       => $desc,
+				'help'       => $help,
 			),
 			'demo_multi_select_array'      => array(
 				'type'       => 'multi-select',
@@ -292,14 +213,8 @@ $options = array(
 					'hello' => __( 'Hello', 'unyson' ),
 					'world' => __( 'World', 'unyson' ),
 				),
-				'desc'       => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'       => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'       => $desc,
+				'help'       => $help,
 			),
 		),
 	),
@@ -307,44 +222,31 @@ $options = array(
 		'label'   => __( 'Radio', 'unyson' ),
 		'type'    => 'radio',
 		'value'   => 'c2',
-		'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'    => $desc,
 		'choices' => array(
 			'c1' => __( 'Radio 1 Custom Text', 'unyson' ),
 			'c2' => __( 'Radio 2 Custom Text', 'unyson' ),
 			'c3' => __( 'Radio 3 Custom Text', 'unyson' ),
 		),
-		'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'    => $help,
 	),
 	'demo_radio_text'                => array(
 		'label'   => __( 'Radio Text', 'unyson' ),
 		'type'    => 'radio-text',
 		'value'   => '50',
-		'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'    => $desc,
 		'choices' => array(
 			'25'  => __( '25%', 'unyson' ),
 			'50'  => __( '50%', 'unyson' ),
 			'100' => __( '100%', 'unyson' ),
 		),
-		'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'    => $help,
 	),
 	'demo_image_picker'              => array(
 		'label'   => __( 'Image Picker', 'unyson' ),
 		'type'    => 'image-picker',
 		'value'   => '',
-		'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'    => $desc,
 		'choices' => array(
 			'choice-1' => array(
 				'small' => array(
@@ -367,101 +269,53 @@ $options = array(
 				),
 			),
 		),
-		'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'    => $help,
 	),
-	'demo_icon'                      => array(
-		'label' => __( 'Icon', 'unyson' ),
-		'type'  => 'icon',
-		'value' => 'fa fa-linux',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+	'demo_icon_v2'                      => array(
+		'label' => __( 'Icon v2', 'unyson' ),
+		'type'  => 'icon-v2',
+		'desc'  => $desc,
+		'help'  => $help,
 	),
 	'demo_upload'                    => array(
 		'label'       => __( 'Single Upload', 'unyson' ),
-		'desc'        => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'        => $desc,
 		'type'        => 'upload',
 		'images_only' => false,
-		'help'        => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'        => $help,
 	),
 	'demo_upload_images'             => array(
 		'label' => __( 'Single Upload (Images Only)', 'unyson' ),
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'  => $desc,
 		'type'  => 'upload',
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'  => $help,
 	),
 	'demo_multi_upload'              => array(
 		'label'       => __( 'Multi Upload', 'unyson' ),
-		'desc'        => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'        => $desc,
 		'type'        => 'multi-upload',
 		'images_only' => false,
-		'help'        => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'        => $help,
 	),
 	'demo_multi_upload_images'       => array(
 		'label' => __( 'Multi Upload (Images Only)', 'unyson' ),
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'  => $desc,
 		'type'  => 'multi-upload',
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'help'  => $help,
 	),
 	'demo_color_picker'              => array(
 		'label' => __( 'Color Picker', 'unyson' ),
 		'type'  => 'color-picker',
 		'value' => '',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'  => $desc,
+		'help'  => $help,
 	),
-	'demo_rgba_color_picker' => array(
+	'demo_rgba_color_picker'         => array(
 		'label' => __( 'RGBA Color Picker', 'unyson' ),
 		'type'  => 'rgba-color-picker',
 		'value' => 'rgba(255, 0, 0, .5)',
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'  => $desc,
+		'help'  => $help,
 	),
 	'demo_gradient'                  => array(
 		'label' => __( 'Gradient', 'unyson' ),
@@ -470,14 +324,8 @@ $options = array(
 			'primary'   => '#ffffff',
 			'secondary' => '#ffffff'
 		),
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'  => $desc,
+		'help'  => $help,
 	),
 	'demo_background_image'          => array(
 		'label'   => __( 'Background Image', 'unyson' ),
@@ -547,47 +395,23 @@ $options = array(
 				)
 			),
 		),
-		'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'    => $desc,
+		'help'    => $help,
 	),
-	'demo_typography'                => array(
-		'label' => __( 'Typography', 'unyson' ),
-		'type'  => 'typography',
-		'value' => array(
-			'size'   => 17,
-			'family' => 'Verdana',
-			'style'  => '300italic',
-			'color'  => '#0000ff'
-		),
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
-	),
-	'demo_typography-v2'                => array(
-		'label' => __( 'Typography V2', 'unyson' ),
-		'type'  => 'typography-v2',
+	'demo_typography-v2'             => array(
+		'label'      => __( 'Typography V2', 'unyson' ),
+		'type'       => 'typography-v2',
 		'value'      => array(
-			'family'    => 'Amarante',
+			'family'         => 'Amarante',
 //			For standard fonts, instead of subset and variation you should set 'style' and 'weight'.
 //			'style' => 'italic',
 //			'weight' => 700,
-			'subset'    => 'latin-ext',
-			'variation' => 'regular',
-			'size'      => 14,
-			'line-height' => 13,
-			'letter-spacing' => -2,
-			'color'     => '#0000ff'
+			'subset'         => 'latin-ext',
+			'variation'      => 'regular',
+			'size'           => 14,
+			'line-height'    => 13,
+			'letter-spacing' => - 2,
+			'color'          => '#0000ff'
 		),
 		'components' => array(
 			'family'         => true,
@@ -597,27 +421,15 @@ $options = array(
 			'letter-spacing' => true,
 			'color'          => true
 		),
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'       => $desc,
+		'help'       => $help,
 	),
 	'demo_datetime_range'            => array(
 		'type'             => 'datetime-range',
 		'attr'             => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
 		'label'            => __( 'Demo date range', 'unyson' ),
-		'desc'             => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'             => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'             => $desc,
+		'help'             => $help,
 		'datetime-pickers' => array(
 			'from' => array(
 				'timepicker' => false,
@@ -638,14 +450,8 @@ $options = array(
 		'value'           => '',
 		'attr'            => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
 		'label'           => __( 'Date & Time picker', 'unyson' ),
-		'desc'            => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'            => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'            => $desc,
+		'help'            => $help,
 		'datetime-picker' => array(
 			'format'        => 'd-m-Y H:i',
 			'extra-formats' => array(),
@@ -658,55 +464,41 @@ $options = array(
 			'defaultTime'   => '12:00'
 		)
 	),
-	'demo_slider' => array(
+	'demo_slider'                    => array(
 		'label' => __( 'Slider', 'unyson' ),
 		'type'  => 'slider',
 		'value' => 10,
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', 'unyson' )
-		),
+		'desc'  => $desc,
+		'help'  => $help,
 	),
-	'demo_range_slider' => array(
+	'demo_range_slider'              => array(
 		'label' => __( 'Range Slider', 'unyson' ),
 		'type'  => 'range-slider',
 		'value' => array(
 			'from' => 30,
-			'to' => 50
+			'to'   => 50
 		),
-		'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
-		'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', 'unyson' )
-		),
+		'desc'  => $desc,
+		'help'  => $help,
 	),
 	'demo_addable_popup'             => array(
 		'label'         => __( 'Addable Popup', 'unyson' ),
 		'type'          => 'addable-popup',
-		'desc'          => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
+		'desc'          => $desc,
 		'template'      => '{{- demo_text }}',
 		'popup-options' => array(
 			'demo_text'                => array(
 				'label' => __( 'Text', 'unyson' ),
 				'type'  => 'text',
 				'value' => 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'  => $desc,
+				'help'  => $help,
 			),
 			'demo_image_picker'        => array(
 				'label'   => __( 'Image Picker', 'unyson' ),
 				'type'    => 'image-picker',
 				'value'   => '',
-				'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
+				'desc'    => $desc,
 				'choices' => array(
 					'choice-1' => array(
 						'label' => __( 'First Image', 'unyson' ),
@@ -731,88 +523,53 @@ $options = array(
 						),
 					),
 				),
-				'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'help'    => $help,
 			),
 			'demo_upload_images'       => array(
 				'label' => __( 'Single Upload (Images Only)', 'unyson' ),
-				'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
+				'desc'  => $desc,
 				'type'  => 'upload',
-				'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'help'  => $help,
 			),
 			'demo_addable_popup_inner' => array(
 				'label'         => __( 'Addable Popup', 'unyson' ),
 				'type'          => 'addable-popup',
-				'desc'          => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
+				'desc'          => $desc,
 				'template'      => 'Title color-picker value : {{- demo_color_picker }}',
 				'popup-options' => array(
 					'demo_multi_upload_images' => array(
 						'label' => __( 'Multi Upload (images only)', 'unyson' ),
-						'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-							'unyson' ),
+						'desc'  => $desc,
 						'type'  => 'multi-upload',
-						'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-							__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-								'unyson' ),
-							__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-								'unyson' )
-						),
+						'help'  => $help,
 					),
 					'demo_color_picker'        => array(
 						'label' => __( 'Color Picker', 'unyson' ),
 						'type'  => 'color-picker',
 						'value' => '',
-						'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-							'unyson' ),
-						'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-							__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-								'unyson' ),
-							__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-								'unyson' )
-						),
+						'desc'  => $desc,
+						'help'  => $help,
 					)
 				)
 			),
 		),
 	),
-	'demo_addable_option' => array(
+	'demo_addable_option'            => array(
 		'label'  => __( 'Addable Option', 'unyson' ),
 		'type'   => 'addable-option',
 		'option' => array(
 			'type' => 'text',
 		),
 		'value'  => array( 'Option 1', 'Option 2', 'Option 3' ),
-		'desc'   => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-			'unyson' ),
-		'help'   => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		)
+		'desc'   => $desc,
+		'help'   => $help
 	),
 	'demo_addable_box'               => array(
 		'label'        => __( 'Addable Box', 'unyson' ),
 		'type'         => 'addable-box',
 		'value'        => array(),
-		'desc'         => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'unyson' ),
-		'help'         => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-			__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'unyson' ),
-			__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'unyson' )
-		),
+		'desc'         => $desc,
+		'help'         => $help,
 		'box-controls' => array(//'custom' => '<small class="dashicons dashicons-smiley" title="Custom"></small>',
 		),
 		'box-options'  => array(
@@ -820,58 +577,39 @@ $options = array(
 				'label' => __( 'Text', 'unyson' ),
 				'type'  => 'text',
 				'value' => 'Lorem ipsum dolor sit amet',
-				'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'  => $desc,
+				'help'  => $help,
 			),
 			'demo_textarea' => array(
 				'label' => __( 'Textarea', 'unyson' ),
 				'type'  => 'textarea',
 				'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-				'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
+				'desc'  => $desc,
 				'help'  => array(
 					'icon' => 'video',
 					'html' => '<iframe width="420" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>'
 				),
 			),
 		),
-		'template' => '{{- demo_text }}',
-		'limit' => 3,
+		'template'     => '{{- demo_text }}',
+		'limit'        => 3,
 	),
-	'demo_group' => array(
+	'demo_group'                     => array(
 		'type'    => 'group',
 		'options' => array(
-			'demo_text_in_group' => array(
+			'demo_text_in_group'     => array(
 				'label' => __( 'Text in Group', 'unyson' ),
 				'type'  => 'text',
 				'value' => 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'  => $desc,
+				'help'  => $help,
 			),
 			'demo_password_in_group' => array(
 				'label' => __( 'Password in Group', 'unyson' ),
 				'type'  => 'password',
 				'value' => 'Dotted text',
-				'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'  => $desc,
+				'help'  => $help,
 			),
 		),
 	),
@@ -885,27 +623,15 @@ $options = array(
 				'label' => __( 'Text in Multi', 'unyson' ),
 				'type'  => 'text',
 				'value' => 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-				'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'  => $desc,
+				'help'  => $help,
 			),
 			'demo_textarea' => array(
 				'label' => __( 'Textarea in Multi', 'unyson' ),
 				'type'  => 'textarea',
 				'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-				'desc'  => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'  => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'  => $desc,
+				'help'  => $help,
 			),
 		),
 	),
@@ -921,14 +647,8 @@ $options = array(
 					'phone'  => __( 'Phone', 'unyson' ),
 					'laptop' => __( 'Laptop', 'unyson' )
 				),
-				'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				)
+				'desc'    => $desc,
+				'help'    => $help
 			)
 		),
 		'choices'      => array(
@@ -975,14 +695,8 @@ $options = array(
 					'phone'  => __( 'Phone', 'unyson' ),
 					'laptop' => __( 'Laptop', 'unyson' )
 				),
-				'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				)
+				'desc'    => $desc,
+				'help'    => $help
 			)
 		),
 		'choices'      => array(
@@ -1046,14 +760,8 @@ $options = array(
 						),
 					)
 				),
-				'desc'    => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'    => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				)
+				'desc'    => $desc,
+				'help'    => $help
 			)
 		),
 		'choices'      => array(
@@ -1102,14 +810,8 @@ $options = array(
 					'label' => __( 'Phone', 'unyson' )
 				),
 				'value'        => 'yes',
-				'desc'         => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					'unyson' ),
-				'help'         => sprintf( "%s \n\n'\"<br/><br/>\n\n <b>%s</b>",
-					__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-						'unyson' ),
-					__( 'Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',
-						'unyson' )
-				),
+				'desc'         => $desc,
+				'help'         => $help,
 			)
 		),
 		'choices'      => array(
