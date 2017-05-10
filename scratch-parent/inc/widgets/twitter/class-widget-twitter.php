@@ -59,7 +59,7 @@ if ( defined( 'FW' ) && function_exists( 'fw_ext_social_twitter_get_connection' 
 				<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'unyson' ); ?> </label>
 				<input type="text" name="<?php echo $this->get_field_name( 'title' ); ?>"
 				       value="<?php echo esc_attr( $instance['title'] ); ?>" class="widefat"
-				       id="<?php $this->get_field_id( 'title' ); ?>"/>
+                       id="<?php echo $this->get_field_id( 'title' ); ?>"/>
 			</p>
 			<p>
 				<label for="<?php echo $this->get_field_id( 'user' ); ?>"><?php _e( 'User', 'unyson' ); ?> :</label>

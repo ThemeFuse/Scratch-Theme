@@ -47,7 +47,9 @@ class Widget_Flickr extends WP_Widget {
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'unyson' ); ?> </label>
-			<input type="text" name="<?php echo $this->get_field_name( 'title' ); ?>"
+			<input type="text"
+                   id="<?php echo $this->get_field_id( 'title' ); ?>"
+                   name="<?php echo $this->get_field_name( 'title' ); ?>"
 			       value="<?php echo esc_attr( $instance['title'] ); ?>" class="widefat"
 			       id="<?php $this->get_field_id( 'title' ); ?>"/>
 		</p>
