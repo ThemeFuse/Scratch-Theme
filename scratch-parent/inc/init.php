@@ -4,8 +4,6 @@ class Theme_Includes
 {
 	private static $rel_path = null;
 
-	private static $include_isolated_callable;
-
 	private static $initialized = false;
 
 	public static function init()
@@ -15,11 +13,6 @@ class Theme_Includes
 		} else {
 			self::$initialized = true;
 		}
-
-		/**
-		 * Include a file isolated, to not have access to current context variables
-		 */
-		self::$include_isolated_callable = create_function('$path', 'include $path;');
 
 		/**
 		 * Both frontend and backend
@@ -97,9 +90,8 @@ class Theme_Includes
 		return get_stylesheet_directory() . self::get_rel_path($rel_path);
 	}
 
-	public static function include_isolated($path)
-	{
-		call_user_func(self::$include_isolated_callable, $path);
+	public static function include_isolated( $path ) {
+		include $path;
 	}
 
 	public static function include_child_first($rel_path)
