@@ -76,18 +76,16 @@ class Theme_Includes
 		return $class_name;
 	}
 
-	public static function get_parent_path($rel_path)
-	{
-		return get_template_directory() . self::get_rel_path($rel_path);
+	public static function get_parent_path( $rel_path ) {
+		return get_template_directory() . self::get_rel_path( $rel_path );
 	}
 
-	public static function get_child_path($rel_path)
-	{
-		if (!is_child_theme()) {
+	public static function get_child_path( $rel_path ) {
+		if ( ! is_child_theme() ) {
 			return null;
 		}
 
-		return get_stylesheet_directory() . self::get_rel_path($rel_path);
+		return get_stylesheet_directory() . self::get_rel_path( $rel_path );
 	}
 
 	public static function include_isolated( $path ) {
