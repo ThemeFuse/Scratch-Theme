@@ -78,7 +78,7 @@ if ( ! function_exists( '_action_theme_setup' ) ) : /**
 	}
 }
 endif;
-add_action( 'init', '_action_theme_setup' );
+add_action( 'init', '_action_theme_setup', 0 );
 
 /**
  * Adjust content_width value for image attachment template.
